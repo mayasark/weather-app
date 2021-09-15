@@ -1,0 +1,170 @@
+.main{
+    width: 100%;
+    height: 1024px;
+    background: #498CEC;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+}
+
+.city-name{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-top: 75px;
+    margin-left: 99px;
+}
+
+.c-f{
+    display: flex;
+    position: absolute;
+    right: 75px;
+    top: 81px;
+}
+
+.c-btn {
+    font-family: 'Lato', sans-serif;
+    width: 38px;
+    height: 29px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right-style: none;
+}
+
+.f-btn{
+    font-family: 'Lato', sans-serif;
+    width: 38px;
+    height: 29px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    background: #498CEC;
+    border: 1px solid #FFFFFF;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left-style: none;
+}
+
+.gradus{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    margin-right: 9px;
+}
+
+.city{
+    width: 100%;
+    display: flex;
+}
+
+
+.city-change{
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-left: 101px;
+}
+
+.img-plane{
+    width: 14px;
+    height: 20px;
+    transform: rotate(11deg);
+    margin-right: 11px;
+    margin-left: 29px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.degrees-center{
+    width: 100%;
+    margin-top: 190px;
+}
+
+.degrees{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon{
+    width: 200px;
+    height: 200px;
+}
+
+.current-degrees{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 180px;
+    line-height: 216px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.weather-text-info{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0;
+
+}
+
+.segment {
+    display: flex;
+    margin-top: 218px;
+    width: 100%;
+}
+
+.nominal{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+.value{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.purport{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+.purport-center{
+    display: block;
+}
+
+
