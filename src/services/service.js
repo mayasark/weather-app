@@ -8,12 +8,21 @@ export default class Service {
     return await res.json();
   };
 
-  getWeather = async () => {
+  getWeatherByName = async (cityName) => {
     const res = await this.getResource(
-      `https://api.openweathermap.org/data/2.5/find?q=Moscow&appid=aac3af81efa850361f41111a847838fc&lang={ru}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=695edea94fb6f18ec372f919a85d07b5&lang=ru`
     );
-    return res.message;
+    return res;
   };
+
+  getWeatherByCoord = async (lat, lon) => {
+    const res = await this.getResource(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=695edea94fb6f18ec372f919a85d07b5&lang=ru`
+    );
+    return res;
+  }
 }
+
+
 
 export const service = new Service();
