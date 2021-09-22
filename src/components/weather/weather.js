@@ -166,16 +166,19 @@ const Weather = () => {
             </div>
 
             <div className="segment">
-                {measures.map( measure => (
-                <div className="purport">
-                    <div className="purport-centre">
-                            <div className="nominal"> {measure.field} </div>
-                            <span className="value">{Math.floor(_.get(measure.value, city))}</span>
-                            <span className="value">{measure.unit}</span>
-                            <span className="value">{cardinalPoints(_.get(measure.unit2, city))}</span>
-                    </div>
-                </div>
-                ))}
+                {measures.map( measure => {
+                    const value = _.get(measure.value, city)
+                    return (
+                        <div className="purport">
+                            <div className="purport-centre">
+                                <div className="nominal"> {measure.field} </div>
+                                <span className="value">{!!value && Math.floor(value)}</span>
+                                <span className="value">{measure.unit}</span>
+                                <span className="value">{cardinalPoints(_.get(measure.unit2, city))}</span>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
         </div>
 
