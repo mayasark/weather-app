@@ -2,6 +2,7 @@ body{
     background: #498CEC;
     margin: 0;
     height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
 
 #root {
@@ -13,13 +14,9 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 }
 
 .city-name{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 50px;
     line-height: 60px;
     color: #FFFFFF;
@@ -35,12 +32,9 @@ body{
 }
 
 .c-btn {
-    font-family: 'Lato', sans-serif;
     width: 38px;
     height: 29px;
     font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
     opacity: 0.4;
     background: #498CEC;
     border: 1px solid #FFFFFF;
@@ -50,11 +44,9 @@ body{
 }
 
 .c-btn-clicked{
-    font-family: 'Lato', sans-serif;
     width: 38px;
     height: 29px;
     font-size: 18px;
-    line-height: 22px;
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -64,11 +56,9 @@ body{
 }
 
 .f-btn{
-    font-family: 'Lato', sans-serif;
     width: 38px;
     height: 29px;
     font-size: 18px;
-    line-height: 22px;
     color: #FFFFFF;
     opacity: 0.4;
     background: #498CEC;
@@ -79,11 +69,9 @@ body{
 }
 
 .f-btn-clicked{
-    font-family: 'Lato', sans-serif;
     width: 38px;
     height: 29px;
     font-size: 18px;
-    line-height: 22px;
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -93,13 +81,8 @@ body{
 }
 
 .gradus{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
     color: #FFFFFF;
-    mix-blend-mode: normal;
     opacity: 0.4;
     margin-right: 9px;
 }
@@ -111,10 +94,7 @@ body{
 
 
 .city-change{
-    font-family: 'Lato', sans-serif;
-    font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
     color: #FFFFFF;
     opacity: 0.6;
     margin-left: 101px;
@@ -151,18 +131,12 @@ body{
 }
 
 .current-degrees{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 180px;
     text-align: center;
     color: #FFFFFF;
 }
 
 .weather-text-info{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 25px;
     text-align: center;
     color: #FFFFFF;
@@ -176,11 +150,7 @@ body{
 }
 
 .nominal{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.6;
@@ -192,11 +162,7 @@ body{
 }
 
 .value{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 25px;
-    line-height: 30px;
     color: #FFFFFF;
 }
 

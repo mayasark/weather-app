@@ -13,7 +13,16 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 
 import location from './icons/location.png';
-import { getWeatherInCurrentLocation, weatherIcon, cardinalPoints, toCelsius, capitalizeFirstLetter, getCityFromLocalStorage, saveCityToLocalStorage } from "./utils";
+
+import {
+    getWeatherInCurrentLocation,
+    weatherIcon,
+    cardinalPoints,
+    toCelsius,
+    capitalizeFirstLetter,
+    getCityFromLocalStorage,
+    saveCityToLocalStorage
+} from './utils';
 
 const measures = [
     {field:'Ветер', value: 'wind.speed', unit: ' м/с, ', unit2: 'wind.deg'},
@@ -115,7 +124,11 @@ const Weather = () => {
                                 >
                                     <Paper>
                                         <ClickAwayListener onClickAway={handleClose}>
-                                            <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                                            <MenuList
+                                                autoFocusItem={open}
+                                                id="menu-list-grow"
+                                                onKeyDown={handleListKeyDown}
+                                            >
                                                 {cities.map( city => (
                                                     <MenuItem onClick={e => handleClose(e, city)}> {city} </MenuItem>
                                                 ))}
@@ -164,7 +177,6 @@ const Weather = () => {
                     }
                 </div>
             </div>
-
             <div className="segment">
                 {measures.map( measure => {
                     const value = _.get(measure.value, city)
@@ -172,7 +184,7 @@ const Weather = () => {
                         <div className="purport">
                             <div className="purport-centre">
                                 <div className="nominal"> {measure.field} </div>
-                                <span className="value">{!!value && Math.floor(value)}</span>
+                                <span className="value">{!!value && Math.round(value)}</span>
                                 <span className="value">{measure.unit}</span>
                                 <span className="value">{cardinalPoints(_.get(measure.unit2, city))}</span>
                             </div>

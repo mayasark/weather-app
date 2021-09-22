@@ -20,9 +20,8 @@ export default class Service {
         `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=695edea94fb6f18ec372f919a85d07b5&lang=ru`
     );
     return res;
-  }
-}
+  };
 
-
+};
 
 export const service = new Service();
