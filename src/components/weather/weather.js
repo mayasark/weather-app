@@ -61,6 +61,7 @@ const Weather = () => {
 
     useEffect(() => {
         handleGetWeatherInCurrentLocation();
+    //    eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleToggle = () => {
